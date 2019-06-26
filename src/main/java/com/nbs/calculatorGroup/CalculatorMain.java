@@ -17,7 +17,7 @@ public class CalculatorMain {
 			Button B1 = new Button("+");
 			Button B2 = new Button("-");
 			Button B3 = new Button("/");
-			Button B3 = new Button("*");
+			Button B4 = new Button("*");
 			
 			L1 = new Label ("First No:");
 			L2 = new Label ("Second No:");
@@ -25,7 +25,6 @@ public class CalculatorMain {
 			T1 = new TextField(10);
 			T2 = new TextField(10);
 			T3 = new TextField(10);
-			T4 = new TextField(10);
 			FlowLayout FL = new FlowLayout();
 			F.setLayout(FL);
 			AddHandler A = new AddHandler(T1);
@@ -48,7 +47,6 @@ public class CalculatorMain {
 			F.add(B4);
 			F.add(L3);
 			F.add(T3);
-			F.add(T4);
 			F.setSize(400,400);
 			F.setVisible(true);
 		}
