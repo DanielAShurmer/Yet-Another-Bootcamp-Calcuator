@@ -12,11 +12,12 @@ public class CalculatorMain {
 
 		public static void main(String xyz[]){
 			Frame F = new Frame("Calculation");
-			TextField T1,T2,T3;
+			TextField T1,T2,T3, T4;
 			Label L1,L2,L3;
 			Button B1 = new Button("+");
 			Button B2 = new Button("-");
 			Button B3 = new Button("/");
+			Button B4 = new Button("*");
 			
 			L1 = new Label ("First No:");
 			L2 = new Label ("Second No:");
@@ -32,6 +33,8 @@ public class CalculatorMain {
 			B2.addActionListener(B);
 			DivideHandler C = new DivideHandler(T3);
 			B3.addActionListener(C);
+			MultiplyHandler D = new MultiplyHandler(T4);
+			B4.addActionListener(D);
 		
 			
 			F.add(L1);
@@ -41,6 +44,7 @@ public class CalculatorMain {
 			F.add(B1);
 			F.add(B2);
 			F.add(B3);
+			F.add(B4);
 			F.add(L3);
 			F.add(T3);
 			F.setSize(400,400);
